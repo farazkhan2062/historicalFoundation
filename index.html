@@ -4,99 +4,111 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Historical Foundations of Education in Pakistan</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
   <style>
+    * { box-sizing: border-box; }
     body {
       margin: 0;
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      line-height: 1.7;
-      background: linear-gradient(to right, #fdfbfb, #ebedee);
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to right, #f8fffa, #e8f5e9);
       color: #333;
     }
+
     header {
       background: linear-gradient(135deg, #006400, #00a86b, #2ecc71);
-      color: white;
-      padding: 50px 20px;
+      color: #fff;
+      padding: 70px 20px;
       text-align: center;
     }
+
     header h1 {
-      margin: 0;
-      font-size: 2.6rem;
+      font-size: 3rem;
+      margin-bottom: 10px;
     }
+
     header p {
-      font-size: 1.1rem;
+      font-size: 1.2rem;
+      opacity: 0.95;
     }
+
     nav {
-      background: #004d26;
-      padding: 12px;
-      text-align: center;
       position: sticky;
       top: 0;
+      background: #004d26;
+      padding: 14px;
+      text-align: center;
       z-index: 1000;
     }
+
     nav a {
       color: #fff;
-      margin: 0 15px;
+      margin: 0 16px;
       text-decoration: none;
-      font-weight: bold;
-      font-size: 1rem;
+      font-weight: 600;
     }
-    nav a:hover {
-      color: #ffdd57;
-    }
+
+    nav a:hover { color: #ffdd57; }
+
     section {
-      padding: 50px 25px;
       max-width: 1200px;
-      margin: 30px auto;
-      background: white;
-      border-radius: 15px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      margin: 50px auto;
+      background: #fff;
+      border-radius: 18px;
+      padding: 50px 30px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
     }
+
     section h2 {
       color: #006400;
-      border-left: 6px solid #2ecc71;
-      padding-left: 12px;
-      margin-bottom: 20px;
+      margin-bottom: 25px;
+      border-left: 7px solid #2ecc71;
+      padding-left: 15px;
     }
-    .content {
+
+    .grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      gap: 25px;
+      gap: 30px;
       align-items: center;
     }
-    .content img {
+
+    .grid img {
       width: 100%;
-      border-radius: 15px;
-      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
     }
-    .highlight {
+
+    .box {
       background: linear-gradient(to right, #e8f5e9, #f1fff4);
-      padding: 15px;
-      border-radius: 10px;
+      padding: 20px;
+      border-radius: 14px;
     }
+
     .video {
-      margin-top: 30px;
-      text-align: center;
+      margin-top: 35px;
     }
+
     iframe {
       width: 100%;
-      height: 340px;
-      border-radius: 15px;
-      box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+      height: 360px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
     }
+
     footer {
       background: linear-gradient(135deg, #004d26, #006400);
-      color: white;
+      color: #fff;
       text-align: center;
-      padding: 25px;
+      padding: 30px 20px;
       font-size: 0.95rem;
     }
-    @media (max-width: 768px) {
-      .content {
-        grid-template-columns: 1fr;
-      }
-      header h1 {
-        font-size: 2rem;
-      }
+
+    @media(max-width: 768px){
+      header h1 { font-size: 2.2rem; }
+      .grid { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -104,100 +116,83 @@
 
 <header>
   <h1>Historical Foundations of Education in Pakistan</h1>
-  <p>A colorful journey from 712 AD to the Modern Era</p>
+  <p>A visual & educational journey from 712 AD to modern Pakistan</p>
 </header>
 
 <nav>
-  <a href="#prepak">Pre-Pakistan</a>
+  <a href="#pre">Pre-Pakistan</a>
   <a href="#sirsyed">Sir Syed Ahmed Khan</a>
-  <a href="#postpak">After 1947</a>
+  <a href="#post">After Independence</a>
   <a href="#bhutto">Bhutto Era</a>
 </nav>
 
-<section id="prepak">
+<section id="pre">
   <h2>Pre-Pakistan Education System (712–1947)</h2>
-  <div class="content">
-    <div class="highlight">
+  <div class="grid">
+    <div class="box">
       <p>
-        Education in the subcontinent began with the Muslim arrival in 712 AD.
-        Maktabs and Madrasahs focused on Qur’an, Arabic, Persian, mathematics, and science.
-        During the Mughal era, education flourished, while British rule introduced modern
-        English-based education and universities.
+        Education in the subcontinent began with the arrival of Muslims in 712 AD.
+        Maktabs and Madrasahs taught Qur’an, Arabic, Persian, mathematics, astronomy, and medicine.
+        The Mughal era marked the golden age of education, while British rule introduced
+        English-based modern education and universities.
       </p>
     </div>
-    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDUwMCAzMDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjUwMCIgaGVpZ2h0PSIzMDAiIGZpbGw9IiNlOGY1ZTkiLz48dGV4dCB4PSIyNTAiIHk9IjE1MCIgZm9udC1zaXplPSIyNCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzAwNjQwMCI+SW1hZ2UgUGxhY2Vob2xkZXI8L3RleHQ+PC9zdmc+" alt="Image placeholder – add local image file" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Badshahi_Mosque_Lahore.jpg" alt="Badshahi Mosque">
   </div>
+
   <div class="video">
-    <div style="padding:20px;border:2px dashed #2ecc71;border-radius:12px;background:#f1fff4;text-align:center;">
-  <p><strong>Video Placeholder</strong></p>
-  <p>Videos require <strong>internet connection</strong> and proper hosting.</p>
-  <p>To enable videos:</p>
-  <ol style="text-align:left;max-width:600px;margin:10px auto;">
-    <li>Upload this file to <strong>GitHub Pages / Netlify</strong>, OR</li>
-    <li>Replace this box with a local <code>&lt;video&gt;</code> MP4 file.</li>
-  </ol>
-</div>
+    <iframe src="https://www.youtube.com/embed/1E3Cz9ZrRrI" title="Education History Subcontinent" allowfullscreen></iframe>
   </div>
 </section>
 
 <section id="sirsyed">
-  <h2>Sir Syed Ahmed Khan & Educational Reforms</h2>
-  <div class="content">
-    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDUwMCAzMDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjUwMCIgaGVpZ2h0PSIzMDAiIGZpbGw9IiNlOGY1ZTkiLz48dGV4dCB4PSIyNTAiIHk9IjE1MCIgZm9udC1zaXplPSIyNCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzAwNjQwMCI+SW1hZ2UgUGxhY2Vob2xkZXI8L3RleHQ+PC9zdmc+" alt="Image placeholder – add local image file" />
-    <div class="highlight">
+  <h2>Sir Syed Ahmed Khan – Educational Reformer</h2>
+  <div class="grid">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Sir_Syed_Ahmad_Khan.jpg" alt="Sir Syed Ahmed Khan">
+    <div class="box">
       <p>
-        Sir Syed Ahmed Khan was a visionary reformer who promoted modern scientific and
-        English education among Muslims. He founded the Muhammadan Anglo-Oriental College
-        in 1875, which later became Aligarh Muslim University. His educational movement
-        awakened Muslim society intellectually and politically.
+        Sir Syed Ahmed Khan (1817–1898) was the pioneer of modern Muslim education.
+        He founded the Muhammadan Anglo-Oriental College in 1875, later Aligarh Muslim University.
+        He encouraged scientific thinking, English education, and social reform among Muslims.
       </p>
     </div>
   </div>
+
   <div class="video">
-    <div style="padding:20px;border:2px dashed #2ecc71;border-radius:12px;background:#f1fff4;text-align:center;">
-  <p><strong>Video Placeholder</strong></p>
-  <p>Videos require <strong>internet connection</strong> and proper hosting.</p>
-  <p>To enable videos:</p>
-  <ol style="text-align:left;max-width:600px;margin:10px auto;">
-    <li>Upload this file to <strong>GitHub Pages / Netlify</strong>, OR</li>
-    <li>Replace this box with a local <code>&lt;video&gt;</code> MP4 file.</li>
-  </ol>
-</div>
+    <iframe src="https://www.youtube.com/embed/9Gz7zY6F9Tg" title="Sir Syed Ahmed Khan Documentary" allowfullscreen></iframe>
   </div>
 </section>
 
-<section id="postpak">
+<section id="post">
   <h2>Education After Independence (1947–Present)</h2>
-  <div class="content">
-    <div class="highlight">
+  <div class="grid">
+    <div class="box">
       <p>
-        After independence, Pakistan faced serious challenges such as shortage of schools
-        and trained teachers. Important milestones include the 1947 Education Conference,
-        the 1959 Education Commission, nationalization in the 1970s, Islamization in the
-        1980s, and the 18th Amendment (2010) ensuring free education for children aged 5–16.
+        After independence, Pakistan faced challenges such as illiteracy and lack of institutions.
+        Major reforms include the 1947 Education Conference, 1959 Commission, establishment of HEC,
+        and Article 25-A under the 18th Amendment ensuring free education for ages 5–16.
       </p>
     </div>
-    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDUwMCAzMDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjUwMCIgaGVpZ2h0PSIzMDAiIGZpbGw9IiNlOGY1ZTkiLz48dGV4dCB4PSIyNTAiIHk9IjE1MCIgZm9udC1zaXplPSIyNCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzAwNjQwMCI+SW1hZ2UgUGxhY2Vob2xkZXI8L3RleHQ+PC9zdmc+" alt="Image placeholder – add local image file" />
+    <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Quaid-e-Azam_Mausoleum.jpg" alt="Quaid e Azam Mausoleum">
   </div>
 </section>
 
 <section id="bhutto">
   <h2>Education During Bhutto Era (1972–1977)</h2>
-  <div class="content">
-    <img src="data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iNTAwIiBoZWlnaHQ9IjMwMCIgdmlld0JveD0iMCAwIDUwMCAzMDAiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PHJlY3Qgd2lkdGg9IjUwMCIgaGVpZ2h0PSIzMDAiIGZpbGw9IiNlOGY1ZTkiLz48dGV4dCB4PSIyNTAiIHk9IjE1MCIgZm9udC1zaXplPSIyNCIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZmlsbD0iIzAwNjQwMCI+SW1hZ2UgUGxhY2Vob2xkZXI8L3RleHQ+PC9zdmc+" alt="Image placeholder – add local image file" />
-    <div class="highlight">
+  <div class="grid">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Zulfikar_Ali_Bhutto_1971.jpg" alt="Zulfikar Ali Bhutto">
+    <div class="box">
       <p>
-        During Bhutto’s era, education was declared free and many private institutions were
-        nationalized. Although enrollment increased, challenges such as shortage of
-        resources, political interference, decline in standards, and weak administration
-        negatively affected educational quality.
+        During Zulfikar Ali Bhutto’s government, education was nationalized and declared free.
+        Enrollment increased, but challenges such as lack of resources, political interference,
+        weak administration, and decline in quality also emerged.
       </p>
     </div>
   </div>
 </section>
 
 <footer>
-  <p>Created by Faraz Saleem | Educational Website Project | Pakistan</p>
+  <p>Created by Faraz Saleem | Deployed on Vercel | Educational Project</p>
 </footer>
 
 </body>
