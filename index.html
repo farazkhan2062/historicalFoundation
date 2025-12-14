@@ -101,6 +101,25 @@
       header h1 { font-size: 2.2rem; }
       .grid { grid-template-columns: 1fr; }
     }
+    /* ===== Simple Animations (No JS, No Video Impact) ===== */
+    .fade-in {
+      animation: fadeIn 1.2s ease-in-out both;
+    }
+
+    .slide-up {
+      animation: slideUp 1.2s ease-in-out both;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes slideUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
   </style>
 </head>
 <body>
@@ -117,7 +136,7 @@
   <a href="#bhutto">Bhutto Era</a>
 </nav>
 
-<section id="pre">
+<section id="pre" class="slide-up">
   <h2>Pre‑Pakistan Education System (712–1947)</h2>
   <div class="grid">
     <div class="box">
@@ -131,10 +150,11 @@
     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Badshahi_Mosque_Lahore.jpg" alt="Badshahi Mosque">
   </div>
 
-  <iframe src="https://en1.savefrom.net" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+  <iframe src="https://player.vimeo.com/video/357274789" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<p style="font-size:0.9rem;color:#555;margin-top:8px;"><em>Illustrative video: traditional learning & historical study environment (used for educational visualization).</em></p>
 </section>
 
-<section id="sirsyed">
+<section id="sirsyed" class="fade-in">
   <h2>Sir Syed Ahmed Khan – Educational Reformer</h2>
   <div class="grid">
     <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Sir_Syed_Ahmad_Khan.jpg" alt="Sir Syed Ahmed Khan">
@@ -147,10 +167,11 @@
     </div>
   </div>
 
-  <iframe src="https://player.vimeo.com/video/22439234" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+  <iframe src="https://player.vimeo.com/video/515703864" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<p style="font-size:0.9rem;color:#555;margin-top:8px;"><em>Illustrative video: education reform & modern learning concepts related to Sir Syed’s vision.</em></p>
 </section>
 
-<section id="post">
+<section id="post" class="slide-up">
   <h2>Education After Independence (1947–Present)</h2>
   <div class="grid">
     <div class="box">
@@ -163,10 +184,11 @@
     <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Quaid-e-Azam_Mausoleum.jpg" alt="Quaid‑e‑Azam Mausoleum">
   </div>
 
-  <iframe src="https://player.vimeo.com/video/143418951" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+  <iframe src="https://player.vimeo.com/video/369115546" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<p style="font-size:0.9rem;color:#555;margin-top:8px;"><em>Illustrative video: post‑independence education, schools & universities.</em></p>
 </section>
 
-<section id="bhutto">
+<section id="bhutto" class="fade-in">
   <h2>Education During Bhutto Era (1972–1977)</h2>
   <div class="grid">
     <img src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Zulfikar_Ali_Bhutto_1971.jpg" alt="Zulfikar Ali Bhutto">
@@ -179,7 +201,8 @@
     </div>
   </div>
 
-  <iframe src="https://player.vimeo.com/video/148751763" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+  <iframe src="https://player.vimeo.com/video/410194069" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
+<p style="font-size:0.9rem;color:#555;margin-top:8px;"><em>Illustrative video: public education & classroom environment (1970s theme).</em></p>
 </section>
 
 <footer>
