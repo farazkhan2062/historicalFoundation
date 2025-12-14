@@ -24,15 +24,8 @@
       text-align: center;
     }
 
-    header h1 {
-      font-size: 3rem;
-      margin-bottom: 10px;
-    }
-
-    header p {
-      font-size: 1.2rem;
-      opacity: 0.95;
-    }
+    header h1 { font-size: 3rem; margin-bottom: 10px; }
+    header p { font-size: 1.2rem; }
 
     nav {
       position: sticky;
@@ -83,17 +76,13 @@
 
     .box {
       background: linear-gradient(to right, #e8f5e9, #f1fff4);
-      padding: 20px;
+      padding: 22px;
       border-radius: 14px;
     }
 
-    .video {
-      margin-top: 35px;
-    }
-
-    iframe {
+    video {
       width: 100%;
-      height: 360px;
+      margin-top: 30px;
       border-radius: 16px;
       box-shadow: 0 8px 20px rgba(0,0,0,0.15);
     }
@@ -116,7 +105,7 @@
 
 <header>
   <h1>Historical Foundations of Education in Pakistan</h1>
-  <p>A visual & educational journey from 712 AD to modern Pakistan</p>
+  <p>Offline‑Friendly Educational Website (MP4 Version)</p>
 </header>
 
 <nav>
@@ -133,16 +122,17 @@
       <p>
         Education in the subcontinent began with the arrival of Muslims in 712 AD.
         Maktabs and Madrasahs taught Qur’an, Arabic, Persian, mathematics, astronomy, and medicine.
-        The Mughal era marked the golden age of education, while British rule introduced
-        English-based modern education and universities.
+        The Mughal era marked a golden age of education, while British rule introduced modern
+        English‑based education and universities.
       </p>
     </div>
     <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Badshahi_Mosque_Lahore.jpg" alt="Badshahi Mosque">
   </div>
 
-  <div class="video">
-    <iframe sandbox="allow-same-origin allow-scripts allow-presentation allow-popups" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" src="https://www.youtube-nocookie.com/embed/1E3Cz9ZrRrI" title="Education History Subcontinent" allowfullscreen></iframe>
-  </div>
+  <video controls poster="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Quaid-e-Azam_Mausoleum.jpg/640px-Quaid-e-Azam_Mausoleum.jpg">
+    <source src="videos/pre-pakistan-education.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
 </section>
 
 <section id="sirsyed">
@@ -151,16 +141,17 @@
     <img src="https://upload.wikimedia.org/wikipedia/commons/0/0e/Sir_Syed_Ahmad_Khan.jpg" alt="Sir Syed Ahmed Khan">
     <div class="box">
       <p>
-        Sir Syed Ahmed Khan (1817–1898) was the pioneer of modern Muslim education.
+        Sir Syed Ahmed Khan (1817–1898) pioneered modern Muslim education.
         He founded the Muhammadan Anglo‑Oriental College in 1875, later Aligarh Muslim University.
-        He encouraged scientific thinking, English education, and social reform among Muslims.
+        His efforts awakened Muslim society intellectually and socially.
       </p>
     </div>
   </div>
 
-  <div class="video">
-    <iframe src="https://www.youtube-nocookie.com/embed/9Gz7zY6F9Tg" title="Sir Syed Ahmed Khan Documentary" allowfullscreen></iframe>
-  </div>
+  <video controls poster="https://upload.wikimedia.org/wikipedia/commons/0/0e/Sir_Syed_Ahmad_Khan.jpg">
+    <source src="videos/sir-syed-education.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
 </section>
 
 <section id="post">
@@ -169,12 +160,17 @@
     <div class="box">
       <p>
         After independence, Pakistan faced challenges such as illiteracy and lack of institutions.
-        Major reforms include the 1947 Education Conference, 1959 Commission, establishment of HEC,
-        and Article 25‑A under the 18th Amendment ensuring free education for ages 5–16.
+        Major milestones include the 1947 Education Conference, 1959 Education Commission,
+        establishment of HEC, and Article 25‑A ensuring free education for children.
       </p>
     </div>
     <img src="https://upload.wikimedia.org/wikipedia/commons/5/5c/Quaid-e-Azam_Mausoleum.jpg" alt="Quaid e Azam Mausoleum">
   </div>
+
+  <video controls poster="https://upload.wikimedia.org/wikipedia/commons/5/5c/Quaid-e-Azam_Mausoleum.jpg">
+    <source src="videos/post-pakistan-education.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
 </section>
 
 <section id="bhutto">
@@ -184,15 +180,20 @@
     <div class="box">
       <p>
         During Zulfikar Ali Bhutto’s government, education was nationalized and declared free.
-        Enrollment increased, but challenges such as lack of resources, political interference,
-        weak administration, and decline in quality also emerged.
+        Enrollment increased, but challenges such as shortage of resources, political interference,
+        weak administration, and decline in standards also emerged.
       </p>
     </div>
   </div>
+
+  <video controls poster="https://upload.wikimedia.org/wikipedia/commons/7/7a/Zulfikar_Ali_Bhutto_1971.jpg">
+    <source src="videos/bhutto-era-education.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
 </section>
 
 <footer>
-  <p>Created by Faraz Saleem | Deployed on Vercel | Educational Project</p>
+  <p>Created by Faraz Saleem | MP4 Offline‑Friendly Educational Website</p>
 </footer>
 
 </body>
